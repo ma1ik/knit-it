@@ -1,0 +1,28 @@
+.notfound {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.user-header {
+    height: 200px;
+    background-color: #1C3554;
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+}
+
+.user-header img {
+    height: 100%;
+    background-color: #457B9D;
+    display: inline-block;
+}
+
+.user-header h1 {
+    color: white;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.socProfileImagePost {
+    background-color: #457B9D;
+}

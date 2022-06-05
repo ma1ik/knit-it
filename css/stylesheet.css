@@ -1,0 +1,556 @@
+body{
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.navbar{
+  width: 80%;
+  margin: 0 auto;
+}
+
+header{
+  background: #E73C45;
+}
+
+header::after{
+  content: '';
+  display: table;
+  clear: both;;
+}
+
+.logo{
+  float: left;
+  padding-top: 5px;
+  width: 80px;
+}
+
+nav{
+  float: right;
+}
+
+nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li{
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 20px;
+  position: relative;
+}
+
+nav a{
+  color: #FFFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover{
+  color: #000;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  width: 0%;
+  background-color: #FFF;
+  position: absolute;
+  top: 0;
+  transition: all ease-in-out 100ms;
+
+}
+
+nav a:hover::before{
+  width: 100%;
+}
+
+footer{
+  text-align: center;
+  font-size: 12px;
+  color: #1C3554;
+}
+
+.outterTutorial{
+  width: 100%;
+}
+
+.tutorial{
+  display: table;
+  margin: 0 auto;
+  color: #1C3554;
+}
+
+.outterSocial{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.leftSocial{
+  display: table;
+  margin: 2%;
+  padding: 1%;
+  border-radius: 7px;
+  float: left;
+  max-width: 15%;
+  background: #457B9D;
+}
+
+.social{
+  display: table;
+  margin: 0 auto;
+  width: 60%;
+  max-width: 60%;
+  color: #1C3554;
+}
+
+.rightSocial{
+  display: table;
+  margin: 2%;
+  padding: 1%;
+  border-radius: 7px;
+  float: right;
+  max-width: 20%;
+  background: #457B9D;
+}
+
+.tutImage{
+  max-width: 600px;
+  border-radius: 5%;
+}
+
+.socProfileImage{
+  max-width: 20%;
+  max-height: 20%;
+  border: 1px;
+  border-style: solid;
+  border-color: #010101;
+  border-radius: 50%;
+}
+
+.socProfileImagePost{
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.socPatternsImage{
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 7px 7px 0 0 ;
+  border: 1px solid #010101;
+}
+
+.center{
+  text-align: center;
+  list-style-position: inside;
+}
+
+.olTut{
+  border-radius: 7px;
+  background-color: #010101;
+  color: #FFF;
+}
+
+.olSoc{
+  list-style: none;
+  padding-left: 0;
+}
+
+.olSocCenter{
+ max-width: 80%;
+ margin: auto;
+}
+
+.olSocTop{
+  position: relative;
+  display: flex;
+  color: #FFF;
+}
+
+.olSocBottom{
+  position: relative;
+  display: block;
+  text-align: left;
+  padding: 1%;
+  border-radius: 0 0 7px 7px;
+  background-color: #010101;
+  color: #FFF;
+}
+
+.olLeftSoc{
+  position: relative;
+  display: flex;
+  border-radius: 7px;
+  padding: 1%;
+  background-color: #A8DADC;
+  color: #010101;
+}
+
+.olRightSocTop{
+  position: relative;
+  display: flex;
+  border-radius: 7px;
+  background-color: #010101;
+  color: #FFF;
+}
+
+.olRightSoc{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 1%;
+  border-radius: 0 0 7px 7px;
+  background-color: #010101;
+  color: #FFF;
+}
+
+.videowrapper{
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 25px;
+	height:0px;
+}
+
+.socPatternsDiv{
+
+}
+
+.socialNotification{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border-radius: 0 7px 0 0 ;
+  width:20px;
+  height:20px;
+  background-color: #E63946;
+  text-align: center;
+  color: white;
+}
+
+.checked {
+  color: #E63946;
+}
+
+/* Start of contact CSS*/
+
+.contact{
+  display: table;
+  margin: 0 auto;
+  background-color: #010101;
+  color: #FFF;
+  width: 60%;
+  height: 60%;
+  margin-top: 50px;
+  border-radius: 5px;
+}
+
+.contact_intro{
+  display: table;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #010101;
+  color: #FFF;
+}
+
+.contact_h1{
+  margin-bottom: 0px;
+  font-weight: normal;
+}
+
+.contact_h2{
+  font-weight: normal;
+  font-size: 20px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+
+}
+
+.contact_form{
+  border-radius: 5px;
+  padding-left: 20px;
+  padding-top: 50px;
+  color: white;
+}
+
+input[type="text"], input[type="email"], input[type="password"], select, textarea {
+  width: 99%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #E73C45; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 12.5px;
+  padding-bottom: 12.5px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  outline: 0;
+}
+
+
+/* End of contact CSS*/
+
+
+/* Auth CSS */
+
+.login-register-form {
+  margin: 0 auto;
+  max-width: 400px;
+  border-radius: 5px;
+  color: white;
+  background-color: black;
+  margin-top: 30px;
+  padding: 25px 15px;
+}
+
+.twitter {
+  background-color: #1da1f2;
+  border: 1px outset #1da1f2;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+}
+
+.twitter:active {
+  border-style: inset;
+}
+
+.login-register-form h2 {
+  margin: 0;
+}
+
+#reg_btn {
+  border: 2px #E73C45 outset;
+}
+
+#reg_btn:hover {
+  opacity: 0.9;
+  border: 2px #E73C45 inset;
+}
+
+.login-register-form form {
+  margin-top: 10px;
+}
+
+.login-register-form .warning {
+  color: #E73C45;
+  margin: 10px 0 0;
+}
+
+/* End of Auth Css */
+
+/* Start of the FAQ CSS */
+
+.header-text-primary-bold {
+  font-weight: bold;
+  
+}
+
+.section-text {
+  font-size: 55px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+
+.faq-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.faq-main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 1030px;
+}
+
+.faq-main-card {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+  width: 400px;
+  height: 100px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #010101;
+  border-radius: 10px;
+  box-shadow: 0 12px 26px rgba(0,0,0,.4);
+}
+
+.features-main-card-text-primary {
+  font-weight: 800;
+  font-size: 16px;
+  color: white;
+
+}
+
+.features-main-card-text-secondary {
+  font-weight: 300;
+  font-size: 13.5px;
+  padding: 3px;
+  color: white;
+}
+
+/* End of FAQ CSS */
+
+/* Store Page CSS */
+
+.store-flex {
+  display: flex;
+}
+
+.sort-panel {
+  flex: 300px 1 1;
+  padding: 10px;
+}
+
+.sort-panel-inner {
+  width: 100%;
+  height: 100%;
+  background-color: #A8DADC;
+  padding: 10px;
+}
+
+.category {
+  margin-top: 20px;
+}
+
+.category:first-of-type {
+  margin-top: 0;
+}
+
+.category-header {
+  font-weight: bold;
+  background-color: #1C3554;
+  color: #FFFFFF;
+  padding: 2px 1px;
+}
+
+.category-body {
+  background-color: #457B9D;
+  padding: 2px 1px;
+  color: #FFFFFF;
+  display: flex;
+}
+
+.category-body-sub {
+  margin-left: 10px;
+  background-color: #457B9D;
+  color: #FFFFFF;
+  padding: 2px 1px;
+  display: flex;
+}
+
+.filters {
+  align-self: flex-end;
+  text-align: right;
+  flex: 50%;
+}
+
+.filters .small {
+  line-height: 16px;
+  margin-right: 5px;
+}
+
+.patterns-panel {
+  flex: calc(100% - 300px) 1 1;
+  align-self:flex-end;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.pattern {
+  display: block;
+  height: 300px;
+  width: 500px;
+
+  background-color: #1C3554;
+  border: 1px solid #1C3554;
+  border-radius: 10px;
+  margin: 10px 10px;
+  overflow: hidden;
+}
+
+.pattern .pattern-icon {
+  height: calc(100% - 40px);
+  background-position: center;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.pattern .pattern-description {
+  color: white;
+  display: flex;
+}
+
+.pattern-description h3 {
+  line-height: 40px;
+  margin: 0 0 0 5px;
+  display: inline-block;
+}
+
+.pattern-description div {
+  height: 40px;
+  flex: 50% 0 1;
+  align-self: flex-end;
+  display: inline-block;
+  margin-left: auto;
+  padding-right: 5px;
+}
+
+.pattern-description div div {
+  height: 18px;
+  width: 100%;
+  text-align: right;
+}
+
+.pattern-description div div svg {
+  margin-right: 2px;
+}
+
+.icon-highlighted {
+  color: #E73C45;
+}
+
+/* End of Store Page CSS */
